@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-color: #d8d8d8;
+    width: 100%;
+    height: 17rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-menu {
+    position: relative;
+    justify-content: center;
+    height: 15rem;
+}
+
+.img-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    z-index: 2;
+}
+
+.img-blood {
+    position: relative;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 220px;
+    display: none;
+
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+
+
+#toggleImage {
+    cursor: pointer;
+    width: 55px;
+    margin: 9px;
+}
+
+#modo-escuro-toggle {
+    display: none;
+
+}
+
+.nav {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    max-width: 1200px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin: 0 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.fundo-dark {
+    display: none;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    z-index: -2;
+    margin-top: 20rem;
+    background-image: url(img/img-fundo.jpeg);
+    background-size: auto 100%;
+    background-repeat: repeat-y;
+}
+
+.main {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center
+}
+
+.contain {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 1.3rem;
+    width: 1200px;
+    margin: 0, auto;
+    height: 200vh;
+}
+
+.contain-post{
+    padding: 10px;
+    background-color: #9b9b9b;
+    border-radius: 15px;
+}
+
+.contain-menu{
+    padding: 10px;
+    background-color: #9b9b9b;
+    border-radius: 15px;
+}
+
+
+/* Estilos para o modo escuro */
+body.dark-mode {
+    background-color: #272727;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background: radial-gradient(#747474, #000000);
+}
+
+.dark-mode .img-blood {
+    display: block;
+}
+
+.dark-mode .fundo-dark {
+    display: block;
+}
+
+.dark-mode .contain-menu {
+    background-color: #272727;
+}
+
+.dark-mode .contain-post {
+    background-color: #272727;
+}
