@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,40 +12,98 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="script-botton.js" defer></script>
     <title>Web Terror</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.resumo a').click(function (e) {
+                e.preventDefault();
+                $(this).parent().slideUp();
+                $(this).closest('.postagem').find('.conteudo-completo').slideDown();
+            });
+        });
+    </script>
+
 </head>
+
 <body>
     <div class="fundo-dark"></div>
+    <div class="fundo-white"></div>
     <header>
         <div class="header-menu">
             <img class="img-logo" src="img/LOGO SITE.png" alt="logo fantasma">
             <img class="img-blood" src="img/Design sem nome (1).png" alt="descoração">
         </div>
-        <div class="header-nav">
+        <script src="navegacaofixa.js"></script>
+        <div class="barra-navegacao">
             <nav class="nav">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Histórias</a></li>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="historia.html">Histórias</a></li>
                     <li><a href="#">Matérias</a></li>
                     <li><a href="#">Filmes & Jogos</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
                 <label>
-                    <img  src="imagem1.jpg" id="toggleImage">
+                    <img src="imagem1.jpg" id="toggleImage">
                     <input id="modo-escuro-toggle" type="checkbox">
                     <script src="script.js"></script>
                 </label>
             </nav>
         </div>
     </header>
-    <section class="main">
-        <div class="contain">
-            <div class="contain-post">
-                <h1>post</h1>
+    <main>
+        <section>
+
+            <div class="carrossel">
+                <div class="noticia">
+                    <h2>Título da Notícia 1</h2>
+                    <p>Conteúdo da Notícia 1.</p>
+                </div>
+                <div class="noticia">
+                    <h2>Título da Notícia 2</h2>
+                    <p>Conteúdo da Notícia 2.</p>
+                </div>
+                <!-- Adicione mais notícias conforme necessário -->
             </div>
-            <div class="contain-menu">
-                <h1>menu</h1>
+            <button id="anterior">Anterior</button>
+            <button id="proximo">Próximo</button>
+            <script src="carrossel.js"></script>
+
+        </section>
+        <section class="main">
+            <div class="contain">
+                <div class="contain-post">
+                    <div class="">
+                        
+                    </div>
+                    <div class="publi">
+                        <img src="img/anuncie seu.png" alt="publicidade">
+                    </div>
+                </div>
+                <div class="contain-menu">
+                    <h1>Postagens Recentes</h1>
+                    <div>
+                        <img src="img/sae.gif" alt="publicidade">
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
+    <footer>
+        <section class="rodape">
+            <div>
+                <div>
+                    <h1>Mande sua história aqui</h1>
+                </div>
+                <div>
+                </div>
+            </div>
+            <div>
+                <span>Site criado com ♥ por:</span> <a href="#">Pedro Vitor</a>
+            </div>
+        </section>
+    </footer>
 </body>
+
 </html>

@@ -27,6 +27,7 @@ header {
     transform: translate(-50%, -50%);
     width: 380px;
     z-index: 2;
+
 }
 
 .img-blood {
@@ -39,10 +40,13 @@ header {
 
 }
 
-.header-nav {
+.barra-navegacao {
+    position: relative;
     display: flex;
     justify-content: center;
     background-color: #000000;
+    top: 1;
+    width: 100%;
 }
 
 
@@ -56,6 +60,33 @@ header {
     display: none;
 
 }
+
+
+
+.carrossel {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.noticia {
+    flex: 0 0 100%;
+    text-align: center;
+    display: none;
+}
+
+button {
+    margin: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+
 
 .nav {
     justify-content: space-between;
@@ -76,14 +107,23 @@ li {
     margin: 0 30px;
 }
 
+span {
+    color: #ffffff;
+}
+
 a {
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+    color: #a80000;
+    font-weight: bolder;
+    background-image: linear-gradient(to top, #8b0000, #272727);
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-position: 0 100%;
+    transition: background-position 0.7s;
 }
 
 a:hover {
-    text-decoration: underline;
+    background-position: 0 0;
 }
 
 .fundo-dark {
@@ -93,15 +133,26 @@ a:hover {
     min-height: 100%;
     z-index: -2;
     margin-top: 20rem;
-    background-image: url(img/img-fundo.jpeg);
-    background-size: auto 100%;
-    background-repeat: repeat-y;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #272727), url(img/img-fundo.jpeg);
+    background-size: cover;
+}
+
+.fundo-white {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    z-index: -2;
+    margin-top: 19.5rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #ffffff), url(img/background.jpg);
+    background-size: cover;
 }
 
 .main {
     margin-top: 4rem;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    height: 200vh;
 }
 
 .contain {
@@ -110,21 +161,49 @@ a:hover {
     gap: 1.3rem;
     width: 1200px;
     margin: 0, auto;
-    height: 200vh;
+    height: 100%;
 }
 
-.contain-post{
+.contain-post {
+    padding: 0 10px;
+    background-color: #9b9b9b;
+    border-radius: 15px;
+}
+
+.contain-post .post{
+    padding: 1rem 3rem;
+}
+
+.contain-post .post p{
+    text-align: justify;
+}
+
+.contain-post .post img{
+    width: 710px;
+}
+
+.publi {
+    display: flex;
+    justify-content: center;
+}
+
+.publi img {
+    width: 710px;
+    margin: 2rem auto;
+    border-radius: 15px;
+}
+
+.contain-menu {
     padding: 10px;
     background-color: #9b9b9b;
     border-radius: 15px;
 }
 
-.contain-menu{
-    padding: 10px;
-    background-color: #9b9b9b;
-    border-radius: 15px;
+.rodape {
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
 }
-
 
 /* Estilos para o modo escuro */
 body.dark-mode {
@@ -142,6 +221,10 @@ body.dark-mode header {
 
 .dark-mode .fundo-dark {
     display: block;
+}
+
+.dark-mode .fundo-white {
+    display: none;
 }
 
 .dark-mode .contain-menu {

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo-fantasma.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="script-botton.js" defer></script>
+    <title>Web Terror</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.resumo a').click(function (e) {
+                e.preventDefault();
+                $(this).parent().slideUp();
+                $(this).closest('.postagem').find('.conteudo-completo').slideDown();
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="fundo-dark"></div>
+    <header>
+        <div class="header-menu">
+            <img class="img-logo" src="img/LOGO SITE.png" alt="logo fantasma">
+            <img class="img-blood" src="img/Design sem nome (1).png" alt="descoração">
+        </div>
+        <div class="header-nav">
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="historia.html">Histórias</a></li>
+                    <li><a href="#">Matérias</a></li>
+                    <li><a href="#">Filmes & Jogos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+                <label>
+                    <img src="imagem1.jpg" id="toggleImage">
+                    <input id="modo-escuro-toggle" type="checkbox">
+                    <script src="script.js"></script>
+                </label>
+            </nav>
+        </div>
+    </header>
+    <section class="main">
+        <div class="contain">
+            <div class="contain-post">
+                <div class="post">
+                    <h1>O Guardião do Portal</h1>
+                    <div class="resumo">
+                        <p>Havia um pequeno povoado aninhado entre montanhas coberta de neblina chamado Valebrisa. Seu
+                            silêncio e calmaria faziam dele um refúgio para aqueles que buscavam paz e tranquilidade. No
+                            entanto no centro dessa cidade, vivia um jovem chamado Daniel. Desde a infância, Daniel
+                            possuía um dom que o tornava diferente dos outros: ele via o que ninguém mais via. Isso o
+                            atormentava desde criança... </p>
+                        <img src="img/guardião do portal.png" alt="imagem ilustrativa da história">
+                    </div>
+                    <div class="resumo">
+                        <br><span>Leia a postagem completa </span><a href="gradiaodoportal.html">aqui</a>.
+                    </div>
+                </div>
+                <div class="publi">
+                    <img src="img/anuncie seu.png" alt="publicidade">
+                </div>
+            </div>
+            <div class="contain-menu">
+                <h1>Postagens Recentes</h1>
+                <div>
+                    <img src="img/sae.gif" alt="publicidade">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
