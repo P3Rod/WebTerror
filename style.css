@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    color: #333333;
+    color: #000000;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -47,6 +47,7 @@ header {
     background-color: #000000;
     top: 1;
     width: 100%;
+    z-index: 2;
 }
 
 
@@ -61,32 +62,73 @@ header {
 
 }
 
+.carrossel-contain {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
+.carrossel-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .carrossel {
-    display: flex;
+    width: 1200px;
+    height: 500px;
     overflow: hidden;
-    width: 80%;
-    margin: 0 auto;
-    padding: 10px;
+    position: relative;
 }
 
-.noticia {
-    flex: 0 0 100%;
-    text-align: center;
+.slide {
+    width: 100%;
+    height: 100%;
     display: none;
+    position: relative;
+    text-align: center;
 }
 
-button {
-    margin: 10px;
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: inline-block;
 }
 
-button:hover {
+.texto {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.164);
+    /* Fundo branco com opacidade */
+    padding: 10px;
+    font-size: 18px;
+}
+
+.indicadores {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicador {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-
-
+.indicador.ativo {
+    background-color: #8b0000;
+}
 
 .nav {
     justify-content: space-between;
@@ -115,7 +157,8 @@ a {
     text-decoration: none;
     color: #a80000;
     font-weight: bolder;
-    background-image: linear-gradient(to top, #8b0000, #272727);
+    background-image: linear-gradient(to top,
+            #8b0000, #272727);
     background-repeat: no-repeat;
     background-size: 100% 2px;
     background-position: 0 100%;
@@ -133,7 +176,9 @@ a:hover {
     min-height: 100%;
     z-index: -2;
     margin-top: 20rem;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #272727), url(img/img-fundo.jpeg);
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0), #272727),
+        url(img/img-fundo.jpeg);
     background-size: cover;
 }
 
@@ -143,16 +188,17 @@ a:hover {
     min-height: 100%;
     z-index: -2;
     margin-top: 19.5rem;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #ffffff), url(img/background.jpg);
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0), #ffffff),
+        url(img/background.jpg);
     background-size: cover;
 }
 
 .main {
-    margin-top: 4rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     margin-bottom: 1.5rem;
-    height: 200vh;
 }
 
 .contain {
@@ -164,23 +210,104 @@ a:hover {
     height: 100%;
 }
 
+.box {
+    position: relative;
+    background: rgba(9b, 9b, 9b, 9b.75);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box span {
+    position: absolute;
+    inset: 2px;
+    border-radius: 16px;
+    background: #9b9b9b;
+    z-index: 1;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    width: 1200px;
+    height: 80%;
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+    background-image: conic-gradient(transparent,
+            transparent, transparent, #ff0000);
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    width: 1200px;
+    height: 80%;
+    animation: animate 4s linear infinite;
+    background-image: conic-gradient(transparent,
+            transparent, transparent, #ff0000);
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
 .contain-post {
-    padding: 0 10px;
+    padding: 1rem 10px;
     background-color: #9b9b9b;
     border-radius: 15px;
+    align-items: center;
+    display: block;
+    flex-direction: column;
 }
 
-.contain-post .post{
-    padding: 1rem 3rem;
+.post-content {
+    width: 85%;
+    margin: 1rem auto;
+    padding: 0 2rem;
 }
 
-.contain-post .post p{
+.post-content .img-post {
+    width: 250px;
+    border-radius: 15px;
+    margin-top: 3px;
+}
+
+.post-content h2 {
+    position: relative;
+    z-index: 1;
+}
+
+.z {
+    z-index: 2;
+}
+
+.media {
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.media p {
+    padding: 0 1rem;
     text-align: justify;
 }
 
-.contain-post .post img{
-    width: 710px;
+.button-post {
+    text-align: right;
+    position: relative;
+    z-index: 1;
 }
+
 
 .publi {
     display: flex;
@@ -212,7 +339,8 @@ body.dark-mode {
 }
 
 body.dark-mode header {
-    background: radial-gradient(#747474, #000000);
+    background: radial-gradient(#747474,
+            #000000);
 }
 
 .dark-mode .img-blood {

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/logo-fantasma.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,29 +53,82 @@
         </div>
     </header>
     <main>
-        <section>
 
-            <div class="carrossel">
-                <div class="noticia">
-                    <h2>Título da Notícia 1</h2>
-                    <p>Conteúdo da Notícia 1.</p>
+
+        <section class="carrossel-contain">
+            <div class="carrossel-set">
+                <div class="carrossel">
+                    <div class="slide">
+                        <img src="img/mande sua hitória.png" alt="Slide 1">
+                        <div class="texto"></div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/games.png" alt="Slide 2">
+                        <div class="texto"></div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/cine terror.png" alt="Slide 3">
+                        <div class="texto"></div>
+                    </div>
                 </div>
-                <div class="noticia">
-                    <h2>Título da Notícia 2</h2>
-                    <p>Conteúdo da Notícia 2.</p>
-                </div>
-                <!-- Adicione mais notícias conforme necessário -->
+                <div class="indicadores"></div>
+                <script src="carrossel.js"></script>
             </div>
-            <button id="anterior">Anterior</button>
-            <button id="proximo">Próximo</button>
-            <script src="carrossel.js"></script>
-
         </section>
+
+
         <section class="main">
             <div class="contain">
                 <div class="contain-post">
-                    <div class="">
-                        
+                    <div class="box">
+                        <div class="post-content">
+                            <h2>aiusfgdsiaougd</h2>
+                            <div class="z">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                                        class="bi bi-person-square" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path
+                                            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z" />
+                                    </svg> Pedro - <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                        fill="currentColor" class="bi bi-calendar-week" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                        <path
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                    </svg> 09/10/2023 às 10:20</span>
+                            </div>
+                            <div class="media">
+                                <img class="img-post" src="img/guardião do portal.png" alt="img">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ut placeat obcaecati
+                                    autem quaerat voluptate. Rem, ipsa numquam, blanditiis earum quis quibusdam
+                                    inventore
+                                    accusamus nam aperiam optio, quos pariatur non...</p>
+                            </div>
+                            <p class="button-post"><a href="#">Leia Mais</a></p>
+                        </div>
+                    </div>
+
+                    <div class="post-content">
+                        <h2>Título da postagem</h2>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                                class="bi bi-person-square" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path
+                                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z" />
+                            </svg> Pedro - <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                fill="currentColor" class="bi bi-calendar-week" viewBox="0 0 16 16">
+                                <path
+                                    d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                            </svg> 09/10/2023 às 10:20</span>
+                        <div class="media">
+                            <img class="img-post" src="img/guardião do portal.png" alt="img">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ut placeat obcaecati
+                                autem quaerat voluptate. Rem, ipsa numquam, blanditiis earum quis quibusdam inventore
+                                accusamus nam aperiam optio, quos pariatur non...</p>
+                        </div>
+                        <p class="button-post"><a href="#">Leia Mais</a></p>
                     </div>
                     <div class="publi">
                         <img src="img/anuncie seu.png" alt="publicidade">
@@ -86,8 +139,12 @@
                     <div>
                         <img src="img/sae.gif" alt="publicidade">
                     </div>
+                    <div>
+                        <div class="box">
+                            <span></span>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </section>
     </main>
     <footer>
