@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo-fantasma.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="script-botton.js" defer></script>
+    <title>Web Terror</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.resumo a').click(function (e) {
+                e.preventDefault();
+                $(this).parent().slideUp();
+                $(this).closest('.postagem').find('.conteudo-completo').slideDown();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="fundo-dark"></div>
+    <div class="fundo-white"></div>
+    <header>
+        <div class="header-menu">
+            <img class="img-logo" src="img/LOGO SITE.png" alt="logo fantasma">
+            <img class="img-blood" src="img/Design sem nome (1).png" alt="descoração">
+        </div>
+        <script src="navegacaofixa.js"></script>
+        <div class="barra-navegacao">
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="historia.html">Histórias</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+                <label>
+                    <img src="imagem1.jpg" id="toggleImage">
+                    <input id="modo-escuro-toggle" type="checkbox">
+                    <script src="script.js"></script>
+                </label>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="carrossel-container">
+            <div class="carrossel-set">
+                <div class="carrossel">
+                    <div class="slide">
+                        <img src="img/mande sua hitória.png" alt="Slide 1">
+                        <div class="texto"></div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/games.png" alt="Slide 2">
+                        <div class="texto"></div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/cine terror.png" alt="Slide 3">
+                        <div class="texto"></div>
+                    </div>
+                </div>
+                <div class="indicadores"></div>
+                <script src="carrossel.js"></script>
+            </div>
+        </section>
+        <section class="main">
+            <div class="container">
+                <div class="container-post">
+
+                    <div>
+                        <h2>Cine terror, você precisa assistir!</h2>
+                    </div>
+                    <div class="grid-filmes">
+                        <div class="color"><a href=""><img src="img/lancamentos.png" alt="ilustrativa"></a>
+                            Melhores filmes de terror de 2023</div>
+                        <div class="color"><a href=""><img src="img/top5netflix.png" alt="ilustrativa"></a>
+                            5 filmes de terror no netflix</div>
+                        <div class="color"><a href=""><img src="img/5filmes.png" alt="ilustrativa"></a>
+                            Top 5 filmes de terror</div>
+                        <div class="color"><a href=""><img src="img/fantasmas.png" alt="ilustrativa"></a>
+                            5 filmes de terror com fantasmas</div>
+                        <div class="color"><a href=""><img src="img/MELHORESFILMES.png" alt="ilustrativa"></a>
+                            Filmes de terror que você precisa assistir</div>
+                        <div class="color"><a href=""><img src="img/hitoriasreais.png" alt="ilustrativa"></a>
+                            Filmes Baseados em Histórias Reais</div>
+                    </div>
+                    <div class="mais">
+                        <a href=""><p>Mais Cine Terror <span>❯</span></p></a>
+                    </div>
+
+                    
+                    <div class="publicidade">
+                        <img src="img/aliexpress.gif" alt=""><span>PUBLICIDADE</span>
+                        <div>
+
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <h2>Games</h2>
+                    </div>
+                    <div class="game-container">
+                        <img src="img/LoF.jpg" alt="">
+                    </div>
+                    <div class="mais">
+                        <a href=""><p>Mais Games <span>❯</span></p></a>
+                    </div>
+
+
+                    <div>
+                        <H2>Ultimas histórias postadas</H2>
+                    </div>
+                    <div class="post-container">
+                        <h2>O Guardião do Portal</h2>
+                        <div class="media">
+                            <div>
+                                <img class="img-post" src="img/guardião do portal.png" alt="img">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                                        class="bi bi-calendar-week" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                        <path
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                    </svg> 09/10/2023</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ut placeat obcaecati
+                                autem quaerat voluptate. Rem, ipsa numquam, blanditiis earum quis quibusdam inventore
+                                accusamus nam aperiam optio, quos pariatur non...</p>
+                        </div>
+                        <p class="button-post"><a href="#">Leia Mais</a></p>
+                    </div>
+                    <div class="post-container">
+                        <h2>O Guardião do Portal</h2>
+                        <div class="media">
+                            <div>
+                                <img class="img-post" src="img/guardião do portal.png" alt="img">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                                        class="bi bi-calendar-week" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                        <path
+                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                    </svg> 09/10/2023</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ut placeat obcaecati
+                                autem quaerat voluptate. Rem, ipsa numquam, blanditiis earum quis quibusdam inventore
+                                accusamus nam aperiam optio, quos pariatur non...</p>
+                        </div>
+                        <p class="button-post"><a href="#">Leia Mais</a></p>
+                    </div>
+                    <div class="mais">
+                        <a href=""><p>Mais Histórias <span>❯</span></p></a>
+                    </div>
+
+                    <div class="publi">
+                        <img src="img/anuncie seu.png" alt="publicidade">
+                    </div>
+                </div>
+                <div class="container-menu">
+                    <h1>Postagens Recentes</h1>
+                    <div>
+                        <img src="img/sae.gif" alt="publicidade">
+                    </div>
+                    <div>
+                        <div class="box">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <section class="rodape">
+            <div>
+                <div>
+                    <h2>Mande Sua História Aqui</h2>
+                </div>
+                <div>
+                </div>
+            </div>
+            <div>
+                <span>Site criado com ♥ por:</span><a href="https://portfoliopedrovitor.netlify.app/" target="_blank">Pedro Vitor</a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-color: #d8d8d8;
+    width: 100%;
+    height: 17rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-menu {
+    position: relative;
+    justify-content: center;
+    height: 15rem;
+}
+
+.img-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    z-index: 2;
+
+}
+
+.img-blood {
+    position: relative;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 220px;
+    display: none;
+
+}
+
+.barra-navegacao {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    top: 1;
+    width: 100%;
+    z-index: 2;
+}
+
+
+#toggleImage {
+    cursor: pointer;
+    width: 55px;
+    margin: 9px;
+}
+
+#modo-escuro-toggle {
+    display: none;
+
+}
+
+.carrossel-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrossel-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrossel {
+    width: 1200px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.texto {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.164);
+    /* Fundo branco com opacidade */
+    padding: 10px;
+    font-size: 18px;
+}
+
+.indicadores {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicador {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicador.ativo {
+    background-color: #8b0000;
+}
+
+.nav {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    max-width: 1200px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin: 0 30px;
+}
+
+span {
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #a80000;
+    font-weight: bolder;
+    background-image: linear-gradient(to top,
+            #8b0000, #272727);
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-position: 0 100%;
+    transition: background-position 0.7s;
+}
+
+a:hover {
+    background-position: 0 0;
+}
+
+.fundo-dark {
+    display: none;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    z-index: -2;
+    margin-top: 20rem;
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0), #272727),
+        url(img/img-fundo.jpeg);
+    background-size: cover;
+}
+
+.fundo-white {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    z-index: -2;
+    margin-top: 19.5rem;
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0), #ffffff),
+        url(img/background.jpg);
+    background-size: cover;
+}
+
+.main {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 1.3rem;
+    width: 1200px;
+    margin: 0, auto;
+    height: 100%;
+}
+
+.container-post {
+    padding: 1rem 10px;
+    background-color: #9b9b9b;
+    border-radius: 15px;
+    align-items: center;
+    display: block;
+    flex-direction: column;
+}
+
+.mais{
+    width: 100%;
+    text-align: right;
+    margin-bottom: 3rem;
+}
+
+.publicidade{
+    width: 100%;
+    height: 250px;
+    background-color: aqua;
+}
+.publicidade img{
+    height: 250px;
+}
+
+
+
+
+
+.game-container {
+    margin: 1rem auto;
+    padding: 0 2rem;
+}
+
+.game-container img {
+    border-radius: 10px;
+}
+
+.grid-filmes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem auto;
+    padding: 0 2rem;
+}
+
+.color{
+    width: 100%;
+    height: 100%;
+}
+
+.post-container {
+    width: 85%;
+    margin: 1rem auto;
+    padding: 0 2rem;
+    border: 2px solid #747474;
+    border-radius: 10px;
+}
+
+.img-post {
+    width: 700px;
+    border-radius: 15px;
+    margin-top: 3px;
+}
+
+.post-container h2 {
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.z {
+    z-index: 2;
+}
+
+.media {
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.media p {
+    padding: 0 1rem;
+    text-align: justify;
+}
+
+.button-post {
+    text-align: right;
+    position: relative;
+    z-index: 1;
+}
+
+
+.publi {
+    display: flex;
+    justify-content: center;
+}
+
+.publi img {
+    width: 710px;
+    margin: 2rem auto;
+    border-radius: 15px;
+}
+
+.container-menu {
+    padding: 10px;
+    background-color: #9b9b9b;
+    border-radius: 15px;
+}
+
+.rodape {
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
+}
+
+.rodape h2{
+    color: #ccc;
+}
+
+/* Estilos para o modo escuro */
+body.dark-mode {
+    background-color: #272727;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background: radial-gradient(#747474,
+            #000000);
+}
+
+.dark-mode .img-blood {
+    display: block;
+}
+
+.dark-mode .fundo-dark {
+    display: block;
+}
+
+.dark-mode .fundo-white {
+    display: none;
+}
+
+.dark-mode .container-menu {
+    background-color: #272727;
+}
+
+.dark-mode .container-post {
+    background-color: #272727;
+}
